@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Bank-listApp</title>
+  </head>
+  <body>
+    <nav class="nav">
+      <p class="logIn-heading">Log in to get started</p>
+      <div>
+        <img src="banklist2.jpg" class="banlist-pic" alt="Bank picture" />
+      </div>
+
+      <div class="nav-right">
+        <input type="text" class="user-input" placeholder="user" required />
+        <input
+          type="text"
+          class="user-pin"
+          placeholder="PIN"
+          maxlength="4"
+          required
+        />
+        <button class="btn-login">&rarr;</button>
+      </div>
+    </nav>
+
+    <div class="main-app-area">
+      <div class="balance">
+        <div class="current-balance-label">
+          Current balance
+          <p class="current-balance-date">
+            As of <span class="date">05/03/2022</span>
+          </p>
+        </div>
+        <div><p class="current-balance">0000$</p></div>
+      </div>
+
+      <!-- main app -->
+
+      <div class="app">
+        <!-- movement arrays -->
+        <div class="movements-container">
+          <div class="movement-row">
+            <div><p class="deposite">2 Deposite</p></div>
+            <div><p class="deposite-date">3 Days ago</p></div>
+            <div><span class="deposite-money"> 4000$ </span></div>
+          </div>
+          <div class="movement-row">
+            <div>
+              <p class="withdrawal">1 withdrawal</p>
+            </div>
+            <div><p class="wihtdraw-date">24/01/2022</p></div>
+            <div><p class="withdraw-money">-378$</p></div>
+          </div>
+        </div>
+
+        <!-- transfring money -->
+
+        <div class="app-right">
+          <div class="operation opeartion-transfer">
+            <form>
+              <h2>Transfer money</h2>
+              <input type="text" class="transfer-to-input" />
+              <input type="number" class="amount-input" />
+              <button class="transfer-button">&rarr;</button> <br />
+              <p class="transfer-to">transfer to</p>
+              <p class="amount">Amount</p>
+            </form>
+          </div>
+
+          <div class="operation operation-loan">
+            <form>
+              <h2>Request loan</h2>
+              <input type="text" class="loan-input" />
+              <button class="loan-button">&rarr;</button> <br />
+              <p class="amount">Amount</p>
+            </form>
+          </div>
+
+          <div class="operation opeartion-close">
+            <form>
+              <h2>Close account</h2>
+              <input type="text" class="close-user-input" />
+              <input type="number" class="close-pin-input" />
+              <button class="close-btn">&rarr;</button> <br />
+              <label class="transfer-to sm-mg"> Confirm user </label>
+              <label class="amount">confirm Pin </label>
+            </form>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer-item">
+          <div>
+            <div class="footer-left">
+              <p class="IN">IN <span class="in-label">0000$</span></p>
+              <p class="OUT">OUT <span class="out-label">0000$</span></p>
+              <p class="interest">
+                Interest <span class="interest-label">0000$</span>
+              </p>
+
+              <!-- <p>sort</p> -->
+            </div>
+          </div>
+          <div class="footer-right">
+            <p>You will be logged out in <span class="Timer">00:00</span></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
